@@ -1,0 +1,57 @@
+2026-04-05 08:15:45,573 - INFO - CONGIG INITIALIZED
+2026-04-05 08:15:45,575 - INFO - TAVILY TOOL ALL SET
+2026-04-05 08:15:45,594 - INFO - SERPER TOOL ALL SET
+2026-04-05 08:24:45,828 - INFO - CONGIG INITIALIZED
+2026-04-05 08:24:45,828 - INFO - TAVILY TOOL ALL SET
+2026-04-05 08:24:45,843 - INFO - SERPER TOOL ALL SET
+2026-04-05 08:24:48,856 - INFO - AGENT CREATED
+2026-04-05 08:26:18,447 - INFO - TravelPlanner initialized
+2026-04-05 08:26:20,259 - INFO - Retrying request to /openai/v1/chat/completions in 0.399229 seconds
+2026-04-05 08:26:21,129 - INFO - Retrying request to /openai/v1/chat/completions in 0.850613 seconds
+2026-04-05 08:26:22,345 - ERROR - Planner error: Connection error.
+2026-04-05 08:34:18,714 - INFO - CONGIG INITIALIZED
+2026-04-05 08:34:18,714 - INFO - TAVILY TOOL ALL SET
+2026-04-05 08:34:18,723 - INFO - SERPER TOOL ALL SET
+2026-04-05 08:34:21,116 - INFO - AGENT CREATED
+2026-04-05 08:34:38,605 - INFO - TravelPlanner initialized
+2026-04-05 08:34:39,622 - INFO - Retrying request to /openai/v1/chat/completions in 0.375786 seconds
+2026-04-05 08:34:40,646 - INFO - Retrying request to /openai/v1/chat/completions in 0.774335 seconds
+2026-04-05 08:34:42,082 - ERROR - Planner error: Connection error.
+2026-04-05 08:43:14,200 - INFO - CONGIG INITIALIZED
+2026-04-05 08:43:14,203 - INFO - TAVILY TOOL ALL SET
+2026-04-05 08:43:14,218 - INFO - SERPER TOOL ALL SET
+2026-04-05 08:43:16,514 - INFO - AGENT CREATED
+2026-04-05 08:43:26,300 - INFO - TravelPlanner initialized
+2026-04-05 08:43:27,135 - INFO - Retrying request to /openai/v1/chat/completions in 0.467358 seconds
+2026-04-05 08:43:27,914 - INFO - Retrying request to /openai/v1/chat/completions in 0.870983 seconds
+2026-04-05 08:43:29,146 - ERROR - Planner error: Connection error.
+2026-04-05 09:14:35,229 - INFO - CONGIG INITIALIZED
+2026-04-05 09:14:35,231 - INFO - TAVILY TOOL ALL SET
+2026-04-05 09:14:35,248 - INFO - SERPER TOOL ALL SET
+2026-04-05 09:14:37,850 - INFO - AGENT CREATED
+2026-04-05 09:14:48,314 - INFO - TravelPlanner initialized
+2026-04-05 09:14:49,008 - INFO - Retrying request to /openai/v1/chat/completions in 0.420712 seconds
+2026-04-05 09:14:49,636 - INFO - Retrying request to /openai/v1/chat/completions in 0.936618 seconds
+2026-04-05 09:14:50,784 - ERROR - Planner error: Connection error.
+2026-04-05 10:18:23,265 - INFO - CONGIG INITIALIZED
+2026-04-05 10:18:23,266 - INFO - TAVILY TOOL ALL SET
+2026-04-05 10:18:23,281 - INFO - SERPER TOOL ALL SET
+2026-04-05 10:53:54,019 - INFO - CONGIG INITIALIZED
+2026-04-05 10:53:54,019 - INFO - TAVILY TOOL ALL SET
+2026-04-05 10:53:54,019 - INFO - SERPER TOOL ALL SET
+2026-04-05 10:53:54,694 - INFO - AGENT CREATED
+2026-04-05 10:54:30,574 - INFO - TravelPlanner initialized
+2026-04-05 10:54:31,897 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-05 10:54:40,088 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-05 10:54:44,606 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-04-05 10:54:44,622 - ERROR - Planner error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kgnyc4tvfx7vx1xj76s6q3bb` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12176, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-04-05 10:58:55,170 - INFO - CONGIG INITIALIZED
+2026-04-05 10:58:55,170 - INFO - TAVILY TOOL ALL SET
+2026-04-05 10:58:55,182 - INFO - SERPER TOOL ALL SET
+2026-04-05 11:02:37,605 - INFO - CONGIG INITIALIZED
+2026-04-05 11:02:37,606 - INFO - TAVILY TOOL ALL SET
+2026-04-05 11:02:37,615 - INFO - SERPER TOOL ALL SET
+2026-04-05 11:02:39,884 - INFO - AGENT CREATED
+2026-04-05 11:02:49,273 - INFO - TravelPlanner initialized
+2026-04-05 11:02:51,415 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-05 11:02:51,446 - INFO - RESPONSE GENERATED

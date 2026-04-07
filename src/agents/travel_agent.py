@@ -1,0 +1,38 @@
+from langchain.chat_models import init_chat_model
+from langchain.agents import create_agent
+from src.tools.tavily_tool import tavily_search_tool
+from src.tools.serper_tool import google_serper_search_tool
+from src.config.config import GROQ_API_KEY
+from src.utils.logger import get_logger
+
+logger = get_logger(__name__)
+
+
+model = init_chat_model(
+    model="llama-3.1-8b-instant",
+    model_provider="groq",   # ✅ REQUIRED
+    temperature=0.7,
+    max_tokens=1500          # ✅ prevents token explosions
+)
+
+
+
+SYSTEM_PROMPT = """
+You are an expert AI travel planner.
+
+Rules:
+- Always use web search tools for real-world accuracy
+- Create a detailed day-wise itinerary
+- Include food suggestions, local tips, and travel advice
+
+User Inputs:
+City, Number of days, Interests, Travel style, Pace
+"""
+
+agent = create_agent(
+    model=model,
+    tools=[tavily_search_tool, google_serper_search_tool],
+    system_prompt=SYSTEM_PROMPT.strip()
+)
+
+logger.info("AGENT CREATED")
