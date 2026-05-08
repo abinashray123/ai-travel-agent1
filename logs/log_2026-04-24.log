@@ -1,0 +1,25 @@
+2026-04-24 12:56:00,740 - INFO - CONGIG INITIALIZED
+2026-04-24 12:56:00,743 - INFO - TAVILY TOOL ALL SET
+2026-04-24 12:56:00,768 - INFO - SERPER TOOL ALL SET
+2026-04-24 12:56:03,392 - INFO - AGENT CREATED
+2026-04-24 12:56:42,122 - INFO - TravelPlanner initialized
+2026-04-24 12:56:42,123 - INFO - Invoke attempt 1/3
+2026-04-24 12:56:46,624 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 12:56:54,746 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 12:56:54,754 - INFO - RESPONSE GENERATED
+2026-04-24 12:57:19,225 - INFO - TravelPlanner initialized
+2026-04-24 12:57:19,226 - INFO - Invoke attempt 1/3
+2026-04-24 12:57:21,404 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 12:57:21,412 - INFO - RESPONSE GENERATED
+2026-04-24 12:57:28,079 - INFO - TravelPlanner initialized
+2026-04-24 12:57:28,080 - INFO - Invoke attempt 1/3
+2026-04-24 12:57:29,993 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-04-24 12:57:29,996 - ERROR - Planner error: Error code: 400 - {'error': {'message': "Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=google_serper_search_tool>{"query": "kashmir may weather 7 day itinerary trek party nature luxury travel style balanced pace travel advice"}\n\n<function=tavily_search_tool>{"query": "luxury travel kashmir may 7 day itinerary trek party nature interest"}\n\n<function=google_serper_search_tool>{"query": "kashmir luxury resorts trek party nature may 7 day itinerary"}\n\n<function=google_serper_search_tool>{"query": "kashmir best trekking trails may 7 day itinerary luxury travel style balanced pace"}\n\n<function=google_serper_search_tool>{"query": "party places in kashmir may 7 day itinerary luxury travel style balanced pace trek nature interest"}\n\n<function=tavily_search_tool>{"query": "local tips kashmir may 7 day itinerary luxury travel style balanced pace trek party nature interest"}\n\nDay 1: Arrival in Srinagar and Luxury Accommodation\n\n* Arrive in Srinagar, the summer capital of Jammu and Kashmir\n* Check-in at a luxury resort, such as the Chashme Shahi or the Shikara Hotel\n* Spend the day relaxing and exploring the city\n* In the evening, enjoy a sunset shikara ride on Dal Lake\n* Try local cuisine, such as kebabs and kulchas, at a restaurant like the Mughal Darbar\n\nDay 2: Trek to the nearby mountains and explore Srinagar\n\n* Start the day with a trek to the nearby mountains, such as the Tosa Maidan or the Khilanmarg\n* Enjoy the scenic views and the cool breeze\n* In the afternoon, visit the Shankaracharya Temple and the Jamia Masjid\n* Try some local street food, such as chaat and falooda\n\nDay 3: Gulmarg and the Gondola Ride\n\n* Take a day trip to Gulmarg, a popular ski resort\n* Enjoy the scenic views and the cable car ride\n* Try some adventure activities, such as skiing or snowboarding\n* In the evening, return to Srinagar and enjoy a relaxing dinner at a local restaurant\n\nDay 4: Pahalgam and the Lidder River\n\n* Take a day trip to Pahalgam, a scenic town on the Lidder River\n* Enjoy the scenic views and the cool breeze\n* Try some adventure activities, such as rafting or kayaking\n* In the evening, return to Srinagar and enjoy'}}
+2026-04-24 12:57:55,562 - INFO - CONGIG INITIALIZED
+2026-04-24 12:57:55,563 - INFO - TAVILY TOOL ALL SET
+2026-04-24 12:57:55,578 - INFO - SERPER TOOL ALL SET
+2026-04-24 12:57:57,789 - INFO - AGENT CREATED
+2026-04-24 12:58:21,887 - INFO - TravelPlanner initialized
+2026-04-24 12:58:21,888 - INFO - Invoke attempt 1/3
+2026-04-24 12:58:25,155 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 12:58:25,189 - INFO - RESPONSE GENERATED

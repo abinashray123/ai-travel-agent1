@@ -1,3 +1,4 @@
+import time
 from langchain_core.messages import HumanMessage, AIMessage
 from src.agents.travel_agent import agent
 from src.utils.logger import get_logger
@@ -17,7 +18,8 @@ class TravelPlanner:
         interests: list[str],
         style: str,
         pace: str,
-        month: str | None = None
+        month: str | None = None,
+        max_retries: int = 3
     ):
         try:
             user_prompt = f"""
@@ -33,14 +35,31 @@ class TravelPlanner:
 
             self.messages.append(HumanMessage(content=user_prompt))
 
-            response = agent.invoke({
-                "messages": self.messages
-            })
+            # Retry logic with exponential backoff
+            for attempt in range(max_retries):
+                try:
+                    logger.info(f"Invoke attempt {attempt + 1}/{max_retries}")
+                    response = agent.invoke({
+                        "messages": self.messages
+                    })
 
-            final_answer = response["messages"][-1].content
-            self.messages.append(AIMessage(content=final_answer))
+                    final_answer = response["messages"][-1].content
+                    self.messages.append(AIMessage(content=final_answer))
 
-            return final_answer
+                    return final_answer
+
+                except Exception as e:
+                    error_msg = str(e)
+                    is_connection_error = any(keyword in error_msg.lower() for keyword in 
+                                             ["connection", "timeout", "getaddrinfo", "network", "unreachable"])
+                    
+                    if is_connection_error and attempt < max_retries - 1:
+                        wait_time = (2 ** attempt) + (attempt * 0.5)
+                        logger.warning(f"Connection error (attempt {attempt + 1}): {error_msg}")
+                        logger.info(f"Retrying in {wait_time} seconds...")
+                        time.sleep(wait_time)
+                    else:
+                        raise
 
         except Exception as e:
             logger.error(f"Planner error: {e}")

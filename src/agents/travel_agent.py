@@ -12,7 +12,7 @@ model = init_chat_model(
     model="llama-3.1-8b-instant",
     model_provider="groq",   # ✅ REQUIRED
     temperature=0.7,
-    max_tokens=1500          # ✅ prevents token explosions
+    max_tokens=512          # ✅ prevents token explosions
 )
 
 
